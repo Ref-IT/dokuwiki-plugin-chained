@@ -1,0 +1,7 @@
+base    authchained
+author  Michael Braun
+email   michael-dev@fami-braun.de
+date    2013-03-08
+name    Chained Authentification
+desc    Try any login backend given.
+url     http://www.dokuwiki.org/plugin:authchained
