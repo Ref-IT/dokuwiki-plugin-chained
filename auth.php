@@ -204,9 +204,12 @@ class auth_plugin_authchained extends DokuWiki_Auth_Plugin {
      * We also include which auth backend the user is associated with
      * so we can retrieve it later.
      *
-     * and cache the result..
+     * and cache the result..      
+     * @param   string $user the user name
+     * @param   bool $requireGroups whether or not the returned data must include groups
+     * @return  false|array containing user data or false
      */
-     public function getUserData($user){
+     public function getUserData($user, $requireGroups=true){
          if (empty($user)) {
              return false;
          }
